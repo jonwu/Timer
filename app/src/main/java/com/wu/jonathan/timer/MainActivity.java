@@ -18,4 +18,5 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.fragment2, TimerControllers.newInstance());
         fragmentTransaction.commit();
     }
+
 }

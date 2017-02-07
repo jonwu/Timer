@@ -66,4 +66,15 @@ public class TimerControllers extends Fragment {
         timerSingleton.clear();
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        timerSingleton.stop();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        timerSingleton.start();
+    }
 }
